@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Anta&display=swap');
+:root{
+    --cor-de-fundo: #6ed7f1;
+    --texto1: #000000;
+    --texto2: #FFFFFF;
+    --botao-ativo: #584fcf;
+    --botao-inativo: rgba(169, 164, 219, 0.5);
+    --texto-fundo: rgba(58, 55, 94, 0.3);
+}
+body{
+    background-color: var(--cor-de-fundo);
+    color: var(--texto1);
+    font-family:"Anta", sans-serif;
+    
+}
+.conteudo-principal{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    max-width: 100%;
+    align-items: center;
+    margin:0 auto;
+}
+.titulo-principal{
+    text-align: center;
+    width: 100%;
+    font-size: 50px;
+}
+.botao{
+    font-family: "Anta", sans-serif;
+    background-color: var(--botao-inativo);
+    display: flex;
+    color: var(--texto1);
+    justify-content: center;
+    padding: 1em;
+    font-size: 40px;
+    align-items: center;
+    width: 100%;
+}
+.botoes{display: flex;}
+.botao:first-child{
+    border-radius: 40px 0 0 0;
+}
+.botao:last-child{
+    border-radius:0 40px 0 0;
+}
+.ativo{
+    background: var(--botao-ativo);
+    border-bottom: 4px solid rgb(64, 175, 179);
+}
