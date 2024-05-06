@@ -66,3 +66,8 @@ border-radius:0 0 50px 50px;
 .aba-conteudo-titulo-secundario{
     color: var(--texto1);
 }
+.contador{
+    font-size: 35px;
+    text-align: center;
+    padding:1em;
+}
