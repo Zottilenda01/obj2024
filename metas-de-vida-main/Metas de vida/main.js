@@ -22,10 +22,6 @@ for(let i=0;i <botoes.length;i++){
     }
 }
 
-contadores[0].textContent=calculaTempo(tempoObjetivo1);
-contadores[1].textContent=calculaTempo(tempoObjetivo2);
-contadores[2].textContent=calculaTempo(tempoObjetivo3);
-contadores[3].textContent=calculaTempo(tempoObjetivo4);
 
 
 function calculaTempo(tempoObjetivo){
@@ -40,4 +36,15 @@ function calculaTempo(tempoObjetivo){
     minutos%=60;
     horas%=24;
     return dias+"dias"+horas+"horas"+minutos+"minutos"+segundos+"segundos";
+}
+
+    comecaCronometro();
+    function comecaCronometro(){
+        atualizaCronometro();
+        setInterval(atualizaCronometro, 10);
+    }
+   function atualizaCronometro(){{contadores[0].textContent=calculaTempo(tempoObjetivo1);
+    contadores[1].textContent=calculaTempo(tempoObjetivo2);
+    contadores[2].textContent=calculaTempo(tempoObjetivo3);
+    contadores[3].textContent=calculaTempo(tempoObjetivo4);}
 }
